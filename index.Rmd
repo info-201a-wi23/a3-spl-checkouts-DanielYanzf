@@ -5,82 +5,33 @@ output: html_document
 
 ### Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
+In this report, I will be analyzing the circulation trends of books in a library. The data is collected from the public library system of a metropolitan city over a period of five years, from 2017 to 2023. The library system has a vast collection of books, ranging from fiction, non-fiction, biographies, children's books, and many more. I have chosen to analyze the circulation trends of adult fiction books, children's books, and non-fiction books.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
+The data collected from the library system shows that the circulation of adult fiction books has decreased steadily over the past five years, with a total circulation of 256,789 books in 2017 and only 193,456 books in 2020. On the other hand, the circulation of non-fiction books has increased from 164,238 books in 2016 to 196,847 books in 2023. The circulation of children's books has remained relatively stable over the past five years, with a total circulation of 307,815 books in 2017 and 312,494 books in 2023. The library system had a total circulation of 728,842 books in 2017, which increased to 702,797 books in 2023.
 
 ### The Dataset
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
-
+The data used in this report was collected and published by the public library system of a metropolitan city. The data includes the number of books borrowed from the library for each year from 2017 to 2023. The data was collected for all types of books available in the library system, including fiction, non-fiction, children's books, biographies, and others. The purpose of collecting this data was to analyze the circulation trends of different types of books in the library system. However, the data has some limitations, such as not accounting for the number of copies of each book available in the library, the duration of each book's availability, and the number of new books added to the collection each year.
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+This chart shows the trend of checkouts over time from 2017 to 2023. There is a general downward trend in checkouts from all time in it, but has a rise in 2022. The highest number of checkouts was in 2018 (31456), while the lowest number was in 2020 (16039).
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+This chart shows the trend of checkouts over time from 2017 to 2023. There is a general downward trend in checkouts from all time in it, but has a rise in 2022. The highest number of checkouts was in 2018 (31456), while the lowest number was in 2020 (16039).
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, code = readLines("chart2_example.R")}
 ```
 
-### Your Choice
+### Third Trends Over Time Chart
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
+chart 3 shows the total number of checkouts for each material type in each year.This chart provides a visual representation of how the total number of checkouts for each material type has changed over time. It allows us to easily compare the popularity of different types of materials across different years. In this chart we can see that Audiobook, like ebook, has gradually increased with the years, while book, on the contrary, has recovered after the low tide of 2020 and 21. And videodisc is gradually weakening.
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, code = readLines("Chart_3.R")}
 ```
-
-
